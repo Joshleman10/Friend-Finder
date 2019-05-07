@@ -6,5 +6,6 @@ Currently working towards completion of this project.  The only remaining portio
 2: Running this updated array through algorithm in APIroutes.js to compare the person submitting the survey to another friend in the server's
 storage
 3: After the comparison is made, display the friend most alike the user that submitted the survey
+4: Deploy this site on Heroku
 
 This application is still a work in progress.
