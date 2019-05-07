@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Survey</title>
+</head>
+<style>
+    h3 {
+        margin-left: 5%;
+    }
+
+    h5 {
+        margin-left: 5%;
+    }
+
+    option {
+        height: 14px;
+    }
+
+    #submitAns {
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <input type="text" id="name" class="form-control" placeholder="Name">
+            </div>
+        </div>
+    </form>
+    <h3>Question 1</h3>
+    <h5>You consider yourself an optimist and attempt to surround yourself with positive people.</h5>
+    <select multiple class="form-control" id="q1" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 2</h3>
+    <h5>You have a few very close friends as opposed to having many friends.</h5>
+    <select multiple class="form-control" id="q2" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 3</h3>
+    <h5>You would spend money on experiences rather than material items.</h5>
+    <select multiple class="form-control" id="q3" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 4</h3>
+    <h5>You would rather make your own food than go out to eat.</h5>
+    <select multiple class="form-control" id="q4" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 5</h3>
+    <h5>You enjoy excercise and fitness.</h5>
+    <select multiple class="form-control" id="q5" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 6</h3>
+    <h5>You would rather ask for help than learn something yourself.</h5>
+    <select multiple class="form-control" id="q6" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 7</h3>
+    <h5>You would prefer a beach vacation than a trip to a ski resort.</h5>
+    <select multiple class="form-control" id="q7" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 8</h3>
+    <h5>You are happiest when you are with a group of friends.</h5>
+    <select multiple class="form-control" id="q8" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 9</h3>
+    <h5>You think there is value in working for what you have rather than it being given.</h5>
+    <select multiple class="form-control" id="q9" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <h3>Question 10</h3>
+    <h5>You can't get anything done before a cup of coffee.</h5>
+    <select multiple class="form-control" id="q10" style="max-width:90%; margin-left:5%;">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <a class="btn btn-primary btn-lg" id="submitAns" role="button">Submit Your Answers</a>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $("#submitAns").on("click", function (event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            scores: [
+                parseInt($("#q1").val()),
+                parseInt($("#q2").val()),
+                parseInt($("#q3").val()),
+                parseInt($("#q4").val()),
+                parseInt($("#q5").val()),
+                parseInt($("#q6").val()),
+                parseInt($("#q7").val()),
+                parseInt($("#q8").val()),
+                parseInt($("#q9").val()),
+                parseInt($("#q10").val())
+            ]
+        };
+
+        console.log(newFriend.scores);
+
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+        $.post("/api/friends", newFriend.scores,
+            function (data) {
+                if (data) {
+                    alert("Thank you for completing the survey");
+                };
+            });
+    });
+</script>
